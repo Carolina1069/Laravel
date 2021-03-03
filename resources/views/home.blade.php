@@ -1,5 +1,5 @@
 <?php
-$nombre= "Carolina"
+$nombre= "Carolina Leiva"
 ?>
 
 <!DOCTYPE html>
