@@ -41,10 +41,18 @@ Route::get('/',function(){
 });*/
 
 
-
+/*
 Route::get ('/', function(){
+    $nombre="Carolina";
     return view ('home');
-})->name('home');
+})->name('home');*/
+
+/*Route::view('/', 'home');*/
+
+Route:: view('/', 'Home')->name('Home');
+Route:: view('/acerca', 'acerca')->name('acerca');
+Route:: view('/portafolio', 'portafolio')->name('portafolio');
+Route:: view('/Contacto', 'Contacto')->name('Contacto');
 
 
 

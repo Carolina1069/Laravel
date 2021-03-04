@@ -2,7 +2,8 @@
 
 
 @section('Contenido')
-<h1> Contactenos</h1>
+<h1> Acerca de</h1>
 @endsection
 
-@section('titulo', 'Contactenos ')
+@section('titulo', 'Acerca de ')
+
