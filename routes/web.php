@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PortController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -49,9 +50,19 @@ Route::get ('/', function(){
 
 /*Route::view('/', 'home');*/
 
+$portafolio = [
+    ['title'=>'Proyecto #1'],
+    ['title'=>'Proyecto #2'],
+    ['title'=>'Proyecto #3'],
+    ['title'=>'Proyecto #4'],
+];
+
 Route:: view('/', 'Home')->name('Home');
 Route:: view('/acerca', 'acerca')->name('acerca');
-Route:: view('/portafolio', 'portafolio')->name('portafolio');
+
+//Route:: view('/portafolio', 'portafolio', compact('portafolio'))->name('portafolio');
+Route:: get('/portafolio','PortController')->name('portafolio');
+
 Route:: view('/Contacto', 'Contacto')->name('Contacto');
 
 
