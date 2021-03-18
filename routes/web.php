@@ -50,21 +50,22 @@ Route::get ('/', function(){
 
 /*Route::view('/', 'home');*/
 
-$portafolio = [
+/*$portafolio = [
     ['title'=>'Proyecto #1'],
     ['title'=>'Proyecto #2'],
     ['title'=>'Proyecto #3'],
     ['title'=>'Proyecto #4'],
 ];
+*/
 
 Route:: view('/', 'Home')->name('Home');
 Route:: view('/acerca', 'acerca')->name('acerca');
 
 //Route:: view('/portafolio', 'portafolio', compact('portafolio'))->name('portafolio');
-Route:: get('/portafolio','PortController')->name('portafolio');
+Route:: get('/portafolio','PortController@index')->name('portafolio');
 
 Route:: view('/Contacto', 'Contacto')->name('Contacto');
 
-
+Route::post('Contacto',('messController@store'))->name('Contac');
 
 
