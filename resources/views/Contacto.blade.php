@@ -12,7 +12,7 @@
 
 
 <form method="post" action={{route('Contac')}}>
-    @csrf
+     @csrf
 <input name="nombre" placeholder="Nombre" value='{{old('nombre')}}' ><br>
 {!!$errors->first('nombre','<small>:message</small><br>')!!}
 

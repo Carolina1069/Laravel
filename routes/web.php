@@ -64,6 +64,16 @@ Route:: view('/acerca', 'acerca')->name('acerca');
 //Route:: view('/portafolio', 'portafolio', compact('portafolio'))->name('portafolio');
 Route:: get('/portafolio','PortController@index')->name('portafolio');
 
+//Route:: get('/portafolio/{id} ','PortController@show')->name('portafolio.show');
+
+Route::get('/portafolio/crear','PortController@create')->name('portafolio.create');
+
+Route::post('/portafolio', 'PortController@store')->name('portafolio.store');
+
+
+Route:: get('/portafolio/{project} ','PortController@show')->name('portafolio.show');
+
+
 Route:: view('/Contacto', 'Contacto')->name('Contacto');
 
 Route::post('Contacto',('messController@store'))->name('Contac');

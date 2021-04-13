@@ -30,7 +30,6 @@ class messController extends Controller
 
         ]
 
-
         );
          Mail::to('bc_guevaral@unicah.edu')->queue(new mensajerecibido($msg));
 
